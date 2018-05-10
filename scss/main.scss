@@ -13,6 +13,17 @@
   position: relative;
   overflow: hidden;
 }
+.container_sun{
+  height: 100vh;
+  width: 50vw;
+  background: url("../img/Screenshot from 2018-04-29 19-20-38.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -1%;
+  right: -0%;
+  overflow: hidden;
+}
 .header{
   font-size: 40px;
   margin-bottom: 4%;
@@ -74,13 +85,6 @@ h2{
   bottom: -40%;
   left: 101%;
 }
-
-
-@media only screen and (min-width: 1271px) and (max-width: 1300px) {
-  #sun{
-    bottom: -40%;
-  }
-}
 #clouds{
   height: 300px;
   position: fixed;
@@ -88,4 +92,48 @@ h2{
   left: 70%;
   //top: -33%;
   //left: 135%;
+}
+@media only screen and (max-width: 480px) {
+  #clouds{
+    height: 150px;
+  }
+  button{
+    bottom: 15%;
+    font-size: 25px;
+  }
+  .header{
+    font-size: 30px;
+  }
+  .main_box{
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 4%;
+  }
+  .container_sun{
+    height: 50vh;
+    width: 100vw;
+    float: left;
+    background: url("../img/sunny.png");
+    background-size: cover;
+    background-position-x: 55%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 740px){
+  .main_box{
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 10%;
+  }
+  #clouds{
+    height: 150px;
+  }
+  .container_sun{
+    height: 50vh;
+    width: 100vw;
+    float: left;
+    background: url("../img/sunny.png");
+    background-size: cover;
+  }
 }

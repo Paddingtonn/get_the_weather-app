@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             main:'',
             error:'',
             pic:'',
+            sectionClass: "container",
         };
 
         getWeather = async (e) => {
@@ -47,12 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         render(){
-            return <section className="container">
+            return <section className={this.state.sectionClass}>
                 <div className="main_box">
                     <div className="weather_box">
                         <Titles/>
                         <Form getWeather={this.getWeather}/>
-                        <Weather city={this.state.city} country={this.state.country} temp={this.state.temperature} description={this.state.description} err={this.state.error} main={this.state.main}/>
+                        <Weather city={this.state.city} country={this.state.country} temp={this.state.temperature} description={this.state.description} err={this.state.error} main={this.state.main} class={this.state.sectionClass}/>
                     </div>
                 </div>
             </section>
