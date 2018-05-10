@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/lpForest_render01.jpg72EF3EAA-7289-4BA0-A4FD-810E414AA3E1Original.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.header{
+  font-size: 40px;
+  margin-bottom: 4%;
+  margin-left: 8%;
+  margin-top: 10%;
+}
+.main_box{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  background: rgba(203,96,179,0.4);
+  z-index: 1;
+}
+.weather_box{
+  min-height: 400px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  position: relative;
+  background: rgba(100, 111, 111, 0.7);
+}
+input{
+  font-size: 23px;
+  width: 40%;
+  border-radius: 10px;
+  margin: 3%;
+  border: none;
+}
+button{
+  font-size: 35px;
+  font-weight: bold;
+  width: 50%;
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  right: 30%;
+  bottom: 5%;
+}
+button:hover{
+  color: aquamarine;
+}
+p{
+  font-size: 25px;
+  margin-left: 10%;
+}
+span{
+  color: aquamarine;
+  font-weight: bold;
+}
+h2{
+  font-size: 30px;
+  margin-left: 10%;
+}
+#sun {
+  height: 700px;
+  position: absolute;
+  bottom: -40%;
+  left: 101%;
+}
+
+
+@media only screen and (min-width: 1271px) and (max-width: 1300px) {
+  #sun{
+    bottom: -40%;
+  }
+}
+#clouds{
+  height: 300px;
+  position: fixed;
+  top: -3%;
+  left: 70%;
+  //top: -33%;
+  //left: 135%;
+}
